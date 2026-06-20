@@ -1,0 +1,35 @@
+.header {
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+  max-width: 60ch;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+/* The little teal tick before the eyebrow label. */
+.tick {
+  display: inline-block;
+  width: 22px;
+  height: 2px;
+  background: var(--accent);
+}
+
+.title {
+  font-size: clamp(1.9rem, 4.5vw, 2.7rem);
+}
+
+.intro {
+  margin-top: 0.9rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}

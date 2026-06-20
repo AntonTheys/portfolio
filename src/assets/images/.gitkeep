@@ -1,0 +1,12 @@
+# Drop your real images here, then import them in the relevant component.
+#
+# Recommended:
+#   • Profile photo:  ~800×1000px (4:5),  JPG or WebP,  < 300 KB
+#   • Project images: 1600×900px (16:9),  JPG or WebP,  < 400 KB each
+#   • Prefer .webp for the best size/quality; .jpg is a safe fallback.
+#
+# Importing (Vite handles hashing + paths automatically):
+#   import portrait from "../assets/images/portrait.jpg";
+#   ...then set  profileImage: portrait  in src/data/site.js
+#
+# This file just keeps the folder in git. You can delete it once you add images.

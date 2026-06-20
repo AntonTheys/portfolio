@@ -1,0 +1,78 @@
+.list {
+  border-top: 1px solid var(--line);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 1.5rem;
+  padding-block: 2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+/* --- Left meta column (year) ---------------------------------------------- */
+.meta {
+  padding-top: 0.2rem;
+}
+.year {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+
+/* --- Body ----------------------------------------------------------------- */
+.title {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.35rem;
+}
+
+.venue {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.desc {
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 1rem;
+  max-width: 62ch;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1.1rem;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+.link svg {
+  transition: transform var(--t-fast);
+}
+.link:hover svg {
+  transform: translate(2px, -2px);
+}
+
+/* --- Responsive ----------------------------------------------------------- */
+@media (max-width: 560px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .meta {
+    padding-top: 0;
+  }
+}

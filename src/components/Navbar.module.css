@@ -1,0 +1,145 @@
+.bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+
+.inner {
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* --- Brand / logo --------------------------------------------------------- */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--ink);
+}
+.brand:hover {
+  color: var(--ink);
+}
+
+.mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--surface);
+  background: var(--ink);
+  border-radius: var(--radius);
+}
+
+.brandName {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+}
+
+/* --- Desktop links -------------------------------------------------------- */
+.links {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.links a {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  position: relative;
+  padding-block: 0.3rem;
+  transition: color var(--t-fast);
+}
+
+.links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--t-med);
+}
+
+.links a:hover {
+  color: var(--ink);
+}
+.links a:hover::after {
+  transform: scaleX(1);
+}
+
+/* --- Mobile toggle button ------------------------------------------------- */
+.toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+/* --- Mobile dropdown ------------------------------------------------------ */
+.mobileMenu {
+  display: none;
+  overflow: hidden;
+  max-height: 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+  transition: max-height var(--t-med);
+}
+.mobileOpen {
+  max-height: 60vh;
+}
+
+.mobileMenu ul {
+  padding: 0.5rem var(--gutter) 1.2rem;
+}
+.mobileMenu a {
+  display: block;
+  padding: 0.85rem 0;
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+
+/* --- Responsive switch ---------------------------------------------------- */
+@media (max-width: 680px) {
+  .links {
+    display: none;
+  }
+  .toggle {
+    display: inline-flex;
+  }
+  .mobileMenu {
+    display: block;
+  }
+  .brandName {
+    /* Keep the brand compact on very small screens. */
+    max-width: 52vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
