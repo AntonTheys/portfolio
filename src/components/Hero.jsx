@@ -3,13 +3,8 @@
 //  All text comes from src/data/site.js — you shouldn't need to edit this file
 //  to change wording. To use a real profile photo, see the note by `profileImage`.
 //
-//  USING A REAL PHOTO:
-//    1. Put the file in  src/assets/images/  (e.g. portrait.jpg).
-//    2. Uncomment the import line below and point it at your file.
-//    3. In src/data/site.js set  profileImage: portrait  (the imported name).
+//  USING A REAL PHOTO: see the import + `profileImage` in src/data/site.js.
 // ============================================================================
-
-// import portrait from "../assets/images/portrait.jpg";
 
 import { site } from "../data/site.js";
 import SocialLinks from "./SocialLinks.jsx";

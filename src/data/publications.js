@@ -15,13 +15,13 @@
 
 export const publications = [
   {
-    title: "[PUBLICATION TITLE — e.g. Self-Supervised Pretraining for Sonar Mine Detection]",
-    venue: "[VENUE / JOURNAL]",
+    title: "Needles in the Landscape: Semi-Supervised Pseudolabeling for Archaeological Site Discovery under Label Scarcity",
+    venue: "Preprint",
     year: "2025",
     description:
-      "Pretrained a vision backbone on large volumes of unlabelled forward-looking sonar, then fine-tuned for mine-like contact classification — cutting the labelled data needed to reach target accuracy.",
-    tags: ["Self-supervised", "Sonar", "Classification", "Transfer learning"],
-    link: "",
+      "Asymmetric dual pseudolabeling (DPL), an end-to-end deep learning method that learns from sparse positives directly from multi-band geospatial imagery for archeological predictive modelling.",
+    tags: ["Archeology", "Machine Learning", "PU learning", "Transfer learning"],
+    link: "https://arxiv.org/abs/2510.16814",
     linkLabel: "PDF",
   },
   {

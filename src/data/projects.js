@@ -43,7 +43,7 @@ export const projects = [
     description:
       "A multi-axis robotic arm built almost entirely from printed parts and hobby servos, with a custom controller. An exercise in mechanical design, motion control, and patience.",
     tech: ["CAD", "Servos", "ESP32", "Inverse kinematics"],
-    youtubeId: "",
+    youtubeId: "GbiSnPxKTg0",
     image: null,
     imageAlt: "3D-printed robotic arm prototype",
     links: [{ label: "Project log", url: "" }],
