@@ -25,9 +25,9 @@ export const publications = [
     linkLabel: "PDF",
   },
   {
-    title: "[PUBLICATION TITLE — e.g. 3D Reconstruction of Seabed Targets from Acoustic Returns]",
+    title: "Coverage-Constrained 3D Reconstruction from Forward-Looking Sonar in Mine Countermeasures",
     venue: "[CONFERENCE]",
-    year: "2024",
+    year: "2026",
     description:
       "A pipeline that reconstructs three-dimensional target geometry from sequences of 2D sonar frames, comparing classical backprojection against learned implicit-surface methods.",
     tags: ["3D reconstruction", "Sonar", "Implicit surfaces"],
@@ -35,11 +35,11 @@ export const publications = [
     linkLabel: "DOI",
   },
   {
-    title: "[PUBLICATION TITLE — e.g. Few-Shot Detection of Rare Mine-Like Objects]",
-    venue: "[WORKSHOP]",
-    year: "2024",
+    title: "SPARC: Self-Correcting Reconstruction from Forward-Looking Sonar under Navigation Drift",
+    venue: "Abstract",
+    year: "2027",
     description:
-      "Adapts a detector to previously unseen target classes from only a handful of examples, addressing the long-tail problem where dangerous objects are rare in real survey data.",
+      "presenting SPARC (spline pose adjustment from reconstruction consistency), which corrects the poses from the degraded reconstruction improving the classical ADMM method. ",
     tags: ["Few-shot", "Detection", "Long-tail"],
     link: "",
     linkLabel: "arXiv",
